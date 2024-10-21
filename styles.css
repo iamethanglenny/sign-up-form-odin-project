@@ -1,0 +1,86 @@
+body {
+    display: flex;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-image {
+    width: 45vw;
+    height: 100vh;
+    background-image: url('images/tesla-bot.jpeg');
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -500px 0px;
+}
+
+.logo-banner {
+    display: flex;
+    align-items: center;
+    width: 45vw;;
+    background-color: black;
+    justify-content: center;
+    position: absolute;
+    top: 35vh;
+}
+
+.logo {
+    height: 10vh;
+}
+
+h1 {
+    font-family: 'Teko', sans-serif;
+    font-size: 54px;
+    color: white;
+    padding-left: 15px;
+}
+
+.image-credit {
+    position: absolute;
+    bottom: 0;
+    left: 12.5vw;
+    color: white;
+}
+
+.right-side {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-text {
+    padding: 40px;
+}
+
+form {
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2),
+    0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.field-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
