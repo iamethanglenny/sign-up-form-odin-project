@@ -18,17 +18,19 @@ body, html {
 
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: -500px 0px;
+    background-position: -350px 0px;
 }
 
 .logo-banner {
     display: flex;
     align-items: center;
-    width: 45vw;;
-    background-color: black;
-    justify-content: center;
+    width: 44vw;;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: right;
     position: absolute;
-    top: 35vh;
+    top: 30vh;
+    box-sizing: border-box;
+    padding-right: 50px;
 }
 
 .logo {
@@ -42,6 +44,14 @@ h1 {
     padding-left: 15px;
 }
 
+h2 {
+    font-weight: 400; 
+}
+
+h3 {
+    font-size: 26px;;
+}
+
 .image-credit {
     position: absolute;
     bottom: 0;
@@ -53,15 +63,26 @@ h1 {
     background-color: white;
     display: flex;
     flex-direction: column;
+    align-items: left;
+    max-width: 54vw;;
 }
 
 .hero-text {
-    padding: 40px;
+    padding: 50px;
+    padding-left: 100px;
+    max-width: 50%;;
 }
 
 form {
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2),
     0 8px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-left: 100px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .form-group {
@@ -83,7 +104,7 @@ label {
 }
 
 input {
-    width: 100%;
+    width: 200px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -95,16 +116,19 @@ input {
 }
 
 button {
+    margin-top: 40px;
+    margin-left: 100px;
     font-weight: bold;
     color: white;
     background-color: black;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 12px 20px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
     text-transform: uppercase;
+    width: 400px;
 }
 
 button:hover {
@@ -115,4 +139,8 @@ button:hover {
 button:focus {
     outline: none;
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+p {
+    margin-left: 100px;
 }
